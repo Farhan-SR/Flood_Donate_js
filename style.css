@@ -1,0 +1,223 @@
+/* universel class */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lexend";
+}
+
+.flex {
+    display: flex;
+}
+
+.lexend {
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header {
+    background-color: rgb(249, 247, 243);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 500;
+
+}
+.blur{
+    filter: blur(8px);
+    z-index: 400;
+}
+
+.navbar {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.btn_blog {
+    font-weight: 600;
+    padding: 5px 20px;
+    font-size: 1.5rem;
+    margin: 1.5rem;
+    background-color: rgb(180, 244, 97);
+    border-radius: 7px;
+    border: none;
+}
+.btn_blog >a {
+    text-decoration: none;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+}
+
+.logo_div {
+    align-items: center;
+}
+
+.logo_div>h2 {
+    font-weight: 700;
+
+    padding: 10px;
+}
+
+.logo_div>p {
+    color: rgba(0, 0, 0, 0.585);
+}
+
+/* buttons  */
+
+.btns {
+    justify-content: center;
+}
+
+.btn_donation {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.358);
+
+}
+
+.btn_donation:hover {
+    background-color: rgba(107, 105, 105, 0.371);
+}
+
+.btn_history {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.358);
+}
+
+.btn_history:hover {
+    background-color: rgba(107, 105, 105, 0.371);
+
+}
+
+/* card start */
+
+.card_section {
+    width: 70%;
+    margin: 0 auto 20px ;
+    border-radius: 10px;
+    border: 1px solid rgba(41, 41, 41, 0.362);
+    padding: 10px;
+    
+}
+
+.card {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card_img {}
+
+.c_img {
+    
+    border-radius: 10px;
+}
+
+.card_right_div {
+    width: 90%;
+}
+
+.card_btn {
+    padding: 15px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: rgba(17, 17, 17, 0.05);
+}
+
+.card_btn>h3 {
+    padding-left: 10px;
+}
+
+
+.h1_noakhali {
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 5px;
+}
+
+.p_noakhali {
+    padding: 5px;
+}
+
+.input_fild {
+    width: 97%;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    margin: 15px 0;
+    border-color: rgba(0, 0, 0, 0.301);
+}
+
+
+
+.btn_Noakhali {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    margin: 18px 0;
+    font-weight: 600;
+    background-color: rgb(180, 244, 97);
+    border: none;
+
+}
+
+.btn_Noakhali:hover {
+    background-color: rgb(180, 244, 97);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 570px) {
+
+    /* body {
+        background-color: rebeccapurple;
+    } */
+    .navbar {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .card {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .c_img {
+        width: 80%;
+
+
+
+        /* height: 80%; */
+    }
+    .card_section{
+        width: 80%;
+
+    }
+}

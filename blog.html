@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="shortcut icon" href="assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header">
+        <section class="navbar">
+            <!-- navbar -->
+            <button class="btn_blog"><a href="index.html">Home</a> </button>
+            <div class="flex logo_div">
+                <img class="logo" src="assets/logo.png" alt="">
+                <h2>Donate Bangladesh</h2>
+            </div>
+            <div class="flex logo_div h11">
+                <img src="assets/coin.png" alt="">
+                <h2>550</h2>
+                <p>BDT</p>
+            </div>
+        </section>
+
+    </header>
+    <main>
+        <section class=" faq">
+            <h1 class="title_faq">* Importat FAQ <i class="fa-solid fa-question"></i> </h1>
+
+            <div class="q_div">
+                <h2>What is the Document Object Model (DOM)?</h2>
+                <p>The DOM is a programming interface for web documents. It represents the
+                    structure of an HTML or XML document as a tree of objects, where each element (like tags, text,
+                    attributes) is a node. Using the DOM, programming languages like JavaScript can interact with and
+                    manipulate the content, structure, and styles of a webpage dynamically. </p>
+            </div>
+            <div class="q_div">
+                <h2>How do you select an element from DOM?</h2>
+                <p>You can select an element from the DOM using: <br>
+
+                    1. getElementById("id")– By ID. <br>
+                    2. getElementsByClassName("class")- By class name.<br>
+                    3. getElementsByTagName("tag")– By tag name.<br>
+                    4. querySelector("selector") – By CSS selector (first match).<br>
+                    5. querySelectorAll("selector")– By CSS selector (all matches).
+            </div>
+            <div class="q_div">
+                <h2>What is event delegation in the context DOM and why is it useful?</h2>
+                <p>Event delegation is a technique in the DOM where a single event listener is attached to a parent
+                    element to handle events for its child elements. Instead of adding multiple listeners to each child,
+                    the event bubbles up to the parent, which can capture and handle it.
+                    <br>
+                <h3>Why it's useful: </h3>
+                Improves performance: Fewer event listeners are needed, especially in dynamic lists.
+                Handles dynamically added elements: The parent can manage events for elements added later without
+                needing new listeners.
+            </div>
+            <div class="q_div">
+                <h2>How do you manipulate an element's attributes and styles using the DOM?</h2>
+                <p>You can manipulate an element's attributes and styles using the DOM in various ways. To change an
+                    element's attributes, you can use methods like `setAttribute(name, value)` to set a specific
+                    attribute, `getAttribute(name)` to retrieve its value, and `removeAttribute(name)` to delete it. For
+                    styling, you can directly modify CSS properties using `element.style.property`, such as
+                    `element.style.backgroundColor = "blue"` to change the background color. Additionally, the
+                    `classList` property allows you to manage classes easily: you can add classes with
+                    `element.classList.add("className")`, remove them with `element.classList.remove("className")`, and
+                    toggle their presence with `element.classList.toggle("className")`. This flexibility enables dynamic
+                    and interactive web designs.
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
