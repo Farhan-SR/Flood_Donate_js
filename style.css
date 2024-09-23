@@ -8,6 +8,14 @@ body {
     font-family: "Lexend";
 }
 
+.hidden {
+    display: none;
+}
+
+.bg {
+    background-color: rgb(180, 244, 97);
+}
+
 .flex {
     display: flex;
 }
@@ -27,10 +35,7 @@ body {
     z-index: 500;
 
 }
-.blur{
-    filter: blur(8px);
-    z-index: 400;
-}
+
 
 .navbar {
     display: flex;
@@ -50,7 +55,8 @@ body {
     border-radius: 7px;
     border: none;
 }
-.btn_blog >a {
+
+.btn_blog>a {
     text-decoration: none;
 }
 
@@ -74,13 +80,17 @@ body {
 }
 
 /* buttons  */
-
 .btns {
     justify-content: center;
 }
 
 .btn_donation {
-    background-color: white;
+    font-weight: 600;
+    padding: 5px 20px;
+    font-size: 1.5rem;
+    margin: 1.5rem;
+    border-radius: 7px;
+    border: none;
     border: 1px solid rgba(0, 0, 0, 0.358);
 
 }
@@ -90,7 +100,12 @@ body {
 }
 
 .btn_history {
-    background-color: white;
+    font-weight: 600;
+    padding: 5px 20px;
+    font-size: 1.5rem;
+    margin: 1.5rem;
+    border-radius: 7px;
+    border: none;
     border: 1px solid rgba(0, 0, 0, 0.358);
 }
 
@@ -100,14 +115,13 @@ body {
 }
 
 /* card start */
-
 .card_section {
     width: 70%;
-    margin: 0 auto 20px ;
+    margin: 0 auto 20px;
     border-radius: 10px;
     border: 1px solid rgba(41, 41, 41, 0.362);
     padding: 10px;
-    
+
 }
 
 .card {
@@ -117,10 +131,8 @@ body {
     gap: 20px;
 }
 
-.card_img {}
-
 .c_img {
-    
+
     border-radius: 10px;
 }
 
@@ -138,7 +150,6 @@ body {
 .card_btn>h3 {
     padding-left: 10px;
 }
-
 
 .h1_noakhali {
     font-size: 1.5rem;
@@ -159,8 +170,6 @@ body {
     border-color: rgba(0, 0, 0, 0.301);
 }
 
-
-
 .btn_Noakhali {
     width: 100%;
     padding: 10px;
@@ -177,15 +186,65 @@ body {
     background-color: rgb(180, 244, 97);
 }
 
+.history_clss {
+
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+}
+
+#t_tile {
+    text-align: center;
+    margin: 15px;
+    font-size: 1.5rem;
+}
+
+.div_style {
+    text-align: center;
+    font-size: 1.2rem;
+    height: auto;
+    background-color: rgba(202, 202, 202, 0.41);
+    padding: 25px;
+    border-radius: 15px;
+    margin: 5px;
+}
 
 
 
+/* modal  */
+.modal {
+    width: 250px;
+    padding: 10px;
+    height: auto;
+    background-color: rgb(242, 241, 241);
+    position: fixed;
+    border-radius: 15px;
+    text-align: center;
+    top: 40%;          
+    left: 40%;   
+    border-radius: 10px;
+    box-shadow: 50px 50px 10px rgba(0, 0, 0, 0.3);
+    /* display: none; */
+visibility: hidden;
+}
 
+.modal h1,
+p {
+    margin: 5px;
+}
 
+.popup {
+   visibility: visible;
+    z-index: 5;
+}
 
-
-
-
+.close_btn {
+    padding: 5px;
+    margin: 10px;
+    font-size: 1.2rem;
+    background-color: rgba(128, 128, 128, 0.266);
+    border-radius: 10px;
+}
 
 
 
@@ -196,9 +255,6 @@ body {
 
 @media only screen and (max-width: 570px) {
 
-    /* body {
-        background-color: rebeccapurple;
-    } */
     .navbar {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -216,7 +272,8 @@ body {
 
         /* height: 80%; */
     }
-    .card_section{
+
+    .card_section {
         width: 80%;
 
     }

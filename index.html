@@ -25,112 +25,140 @@
             </div>
             <div class="flex logo_div h11">
                 <img src="assets/coin.png" alt="">
-                <h2>550</h2>
+                <h2><span id="my_blance">5000</span></h2>
                 <p>BDT</p>
             </div>
         </section>
-
+        <!-- btn_blog -->
         <section class="flex btns ">
-            <button class="btn_blog btn_donation ">Donation</button>
-            <button class="btn_blog btn_history">History</button>
-
+            <button id="btnDestination" class="bg btn_donation ">Donation</button>
+            <button id="btnHistory" class=" btn_history">History</button>
         </section>
     </header>
-    <main>
-        <!-- card section  -->
-        <section class="card_section">
-            <div class="card">
-                <div class="card_img ">
-                    <img class="c_img" src="assets/noakhali.png" alt="">
-                </div>
+    <main class="">
+<section>
+    <button id="modalbtn">hi modal </button>
+
+    <div id="modal" class="modal">
+        <h1>Congrass!</h1>
+        <img src="assets/coin.png" alt="">
+        <p>You have donate for Humankind.</p>
+        <h2>Successfull</h2>
+        <button id="okk" class="close_btn">Close Confirmation</button>
+    </div>
+</section>
 
 
-                <div class="card_right_div">
-                    <div class="flex card_btn">
-                        <img src="assets/coin.png" alt="">
-                        <h3>0 BDT</h3>
+
+        <section id="donation" class="">
+
+            <!-- card section 1 -->
+            <section class="card_section ">
+                <div class="card">
+                    <div class="card_img ">
+                        <img class="c_img" src="assets/noakhali.png" alt="">
                     </div>
-                    <div class="">
-                        <h1 class="h1_noakhali">Donate for Flood at Noakhali, Bangladesh</h1>
-                        <p class="p_noakhali"> The recent floods in Noakhali have caused significant damage to homes
-                            infrastructure. Your
-                            donation will help provide essential supplies and to those affected by this disaster. Every
-                            contribution, big or small, makes difference. Please join us in supporting the relief
-                            efforts
-                            and making a positive impact on the lives of those in need.</p>
+
+
+                    <div class="card_right_div">
+                        <div class="flex card_btn">
+                            <img src="assets/coin.png" alt="">
+                            <h3><span id="noakhali_donate">5500</span> BDT</h3>
+                        </div>
+                        <div class="">
+                            <h1 class="h1_noakhali">Donate for Flood at Noakhali, Bangladesh</h1>
+                            <p class="p_noakhali"> The recent floods in Noakhali have caused significant damage to homes
+                                infrastructure. Your
+                                donation will help provide essential supplies and to those affected by this disaster.
+                                Every
+                                contribution, big or small, makes difference. Please join us in supporting the relief
+                                efforts
+                                and making a positive impact on the lives of those in need.</p>
+                        </div>
+                        <input id="input_money" class="input_fild" type="text" placeholder="Write Donation Amount">
+                        <br>
+                        <button id="donate_btn" class="btn_Noakhali">Donate Now</button>
                     </div>
-                    <input class="input_fild" type="text" placeholder="Write Donation Amount">
-                    <br>
-                    <button class="btn_Noakhali">Donate Now</button>
                 </div>
-            </div>
+            </section>
+
+            <!-- 2nd card  -->
+
+            <section class="card_section">
+                <div class="card">
+                    <div class="card_img ">
+                        <img class="c_img" src="assets/feni.png" alt="">
+                    </div>
+
+
+                    <div class="card_right_div">
+                        <div class="flex card_btn">
+                            <img src="assets/coin.png" alt="">
+                            <h3>600 BDT</h3>
+                        </div>
+                        <div class="">
+                            <h1 class="h1_noakhali">Donate for Flood Relief in Feni,Bangladesh</h1>
+                            <p class="p_noakhali"> The recent floods in Noakhali have caused significant damage to homes
+                                infrastructure. Your
+                                donation will help provide essential supplies and to those affected by this disaster.
+                                Every
+                                contribution, big or small, makes difference. Please join us in supporting the relief
+                                efforts
+                                and making a positive impact on the lives of those in need.</p>
+                        </div>
+                        <input class="input_fild" type="text" placeholder="Write Donation Amount">
+                        <br>
+                        <button class="btn_Noakhali">Donate Now</button>
+                    </div>
+                </div>
+            </section>
+            <!-- 3rd card  -->
+
+            <section class="card_section">
+                <div class="card">
+                    <div class="card_img ">
+                        <img class="c_img" src="assets/quota-protest.png" alt="">
+                    </div>
+
+
+                    <div class="card_right_div">
+                        <div class="flex card_btn">
+                            <img src="assets/coin.png" alt="">
+                            <h3>0 BDT</h3>
+                        </div>
+                        <div class="">
+                            <h1 class="h1_noakhali">Aid for Injured in the Quota Movement
+                            </h1>
+                            <p class="p_noakhali"> The recent floods in Noakhali have caused significant damage to homes
+                                infrastructure. Your
+                                donation will help provide essential supplies and to those affected by this disaster.
+                                Every
+                                contribution, big or small, makes difference. Please join us in supporting the relief
+                                efforts
+                                and making a positive impact on the lives of those in need.</p>
+                        </div>
+                        <input class="input_fild" type="text" placeholder="Write Donation Amount">
+                        <br>
+                        <button class="btn_Noakhali">Donate Now</button>
+                    </div>
+                </div>
+            </section>
+
         </section>
-
-        <!-- 2nd card  -->
-
-        <section class="card_section">
-            <div class="card">
-                <div class="card_img ">
-                    <img class="c_img" src="assets/feni.png" alt="">
-                </div>
-
-
-                <div class="card_right_div">
-                    <div class="flex card_btn">
-                        <img src="assets/coin.png" alt="">
-                        <h3>600 BDT</h3>
-                    </div>
-                    <div class="">
-                        <h1 class="h1_noakhali">Donate for Flood Relief in Feni,Bangladesh</h1>
-                        <p class="p_noakhali"> The recent floods in Noakhali have caused significant damage to homes
-                            infrastructure. Your
-                            donation will help provide essential supplies and to those affected by this disaster. Every
-                            contribution, big or small, makes difference. Please join us in supporting the relief
-                            efforts
-                            and making a positive impact on the lives of those in need.</p>
-                    </div>
-                    <input class="input_fild" type="text" placeholder="Write Donation Amount">
-                    <br>
-                    <button class="btn_Noakhali">Donate Now</button>
-                </div>
+        <!-- History section  -->
+        <section id="history" class="hidden history_clss  ">
+            <h1 id="t_tile">Transaction History </h1>
+            <div id="Transaction_containr" class="">
             </div>
+            
         </section>
-        <!-- 3rd card  -->
-
-        <!-- card section  -->
-        <section class="card_section">
-            <div class="card">
-                <div class="card_img ">
-                    <img class="c_img" src="assets/quota-protest.png" alt="">
-                </div>
-
-
-                <div class="card_right_div">
-                    <div class="flex card_btn">
-                        <img src="assets/coin.png" alt="">
-                        <h3>0 BDT</h3>
-                    </div>
-                    <div class="">
-                        <h1 class="h1_noakhali">Aid for Injured in the Quota Movement
-                        </h1>
-                        <p class="p_noakhali"> The recent floods in Noakhali have caused significant damage to homes
-                            infrastructure. Your
-                            donation will help provide essential supplies and to those affected by this disaster. Every
-                            contribution, big or small, makes difference. Please join us in supporting the relief
-                            efforts
-                            and making a positive impact on the lives of those in need.</p>
-                    </div>
-                    <input class="input_fild" type="text" placeholder="Write Donation Amount">
-                    <br>
-                    <button class="btn_Noakhali">Donate Now</button>
-                </div>
-            </div>
-        </section>
-
     </main>
     <footer>
 
     </footer>
+    <script src="total.js"></script>
 </body>
 
 </html>
+
+
