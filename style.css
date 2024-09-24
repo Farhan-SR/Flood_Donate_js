@@ -243,6 +243,13 @@ p {
     border-radius: 10px;
 }
 
+.blur-section {
+    width: 100%;
+    background-color:rgba(249, 247, 243, 0.235); 
+    backdrop-filter: blur(5px);
+    padding: 20px;
+   
+}
 
 
 
